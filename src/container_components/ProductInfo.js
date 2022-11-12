@@ -1,7 +1,9 @@
 import React from 'react'
+import { useResource } from '../custom_hook/useResource';
 
-export const ProductInfo = ({product}) => {
-    const {name, price, description, rating} = product;
+export const ProductInfo = ({productId}) => {
+  const product = useResource(`/products/${productId}`);
+    const {name, price, description, rating} = product || {};
   return (
     <>
         <h3>{name}</h3>

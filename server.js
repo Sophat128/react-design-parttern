@@ -4,6 +4,7 @@ const app = express();
 app.use(express.json());
 
 let currentUser = {
+  id: "123",
   name: "Thery",
   age: 20,
   hairColor: "brown",
@@ -12,18 +13,21 @@ let currentUser = {
 
 let users = [
   {
+    id: "123",
     name: "Sophat",
     age: 22,
     hairColor: "brown",
     hobbies: ["Swimming", "Bicycling", "Video game"],
   },
   {
+    id: "234",
     name: "Bopha",
     age: 25,
     hairColor: "black",
     hobbies: ["golfing", "cooking"],
   },
   {
+    id: "345",
     name: "David",
     age: 20,
     hairColor: "brown",
@@ -32,18 +36,21 @@ let users = [
 ];
 let products = [
   {
+    id: "1234",
     name: "Flate TV",
     price: "$300",
     description: "Huge screen with great deal",
     rating: 4.5,
   },
   {
+    id: "2345",
     name: "Basketball",
     price: "$10",
     description: "Just like a pro use",
     rating: 3.5,
   },
   {
+    id: "3456",
     name: "Running Shoes",
     price: "$120",
     description: "State-of-art",

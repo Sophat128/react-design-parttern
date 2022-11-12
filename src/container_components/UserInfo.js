@@ -1,7 +1,12 @@
 import React from 'react'
+// import {useCurrentUser} from '../custom_hook/useCurrentUser'
+// import { useUser } from '../custom_hook/useUser';
+import { useResource } from './../custom_hook/useResource';
 
-const UserInfo = ({user}) => {
-  
+const UserInfo = ({userId}) => {
+  // const user = useUser(userId);
+  const user = useResource(`/users/${userId}`)
+
     const {name, age, hairColor, hobbies} = user || {};
   return user ? (
     <>
