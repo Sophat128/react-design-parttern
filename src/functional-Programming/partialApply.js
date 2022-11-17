@@ -1,4 +1,3 @@
-import { Component } from "react";
 
 export const partialApply = (Component, partialProps) => {
   return (props) => {

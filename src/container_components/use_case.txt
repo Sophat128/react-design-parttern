@@ -1,0 +1,1 @@
+It allows the components to share the funtionality through mean of a parent components
